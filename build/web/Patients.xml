@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SWDRS>
+	<Patients>
+		<Patient>
+			<hasEmail>sobia@domain.com</hasEmail>
+			<hasPassword>123</hasPassword>
+			<hasName>sobia</hasName>
+			<hasType>PATIENT</hasType>
+		</Patient>
+	<Patient>
+	<hasEmail>goku@gmail.com</hasEmail>
+		<hasPassword>123</hasPassword>
+		<hasName>Goku</hasName>
+		<hasType>PATIENT</hasType>
+	</Patient>
+	<Patient>
+		<hasEmail>masood@gmail.com</hasEmail>
+		<hasPassword>123</hasPassword>
+		<hasName>Masood Mehmood</hasName>
+		<hasType>PATIENT</hasType>
+		</Patient>
+	<Patient><hasEmail>hammad@gmail.com</hasEmail><hasPassword>123</hasPassword><hasName>Hammad</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>ahmed@domain.com</hasEmail><hasPassword>123</hasPassword><hasName>Ahmed</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>haseeb@gmail.com</hasEmail><hasPassword>123</hasPassword><hasName>Haseeb Moin</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>p@domain.com</hasEmail><hasPassword>123abcABC</hasPassword><hasName>P.D</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>rohan@gmail.com</hasEmail><hasPassword>123456Aa</hasPassword><hasName>rohan</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>aliahsan@gmail.com</hasEmail><hasPassword>123abcABC</hasPassword><hasName>Ali Ahsan</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>sharukh@gmail.com</hasEmail><hasPassword>123456Aa</hasPassword><hasName>shahrukh haider</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>ahsanaftab@gmail.com</hasEmail><hasPassword>123abcABC</hasPassword><hasName>Ahsan Aftab</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>dsu121cs021@gmail.com</hasEmail><hasPassword>Aa123456</hasPassword><hasName>Muhammad Qaisar</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>temp@domain.com</hasEmail><hasPassword>123abcABC</hasPassword><hasName>Temp</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>moin@gmail.com</hasEmail><hasPassword>asdQWE123</hasPassword><hasName>moin</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>p1@domain.com</hasEmail><hasPassword>123abcABC</hasPassword><hasName>Patient1</hasName><hasType>PATIENT</hasType></Patient><Patient><hasEmail>waled@gmail.com</hasEmail><hasPassword>123</hasPassword><hasName>waled</hasName><hasType>PATIENT</hasType></Patient></Patients>
+</SWDRS>

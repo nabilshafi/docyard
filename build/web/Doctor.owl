@@ -1,0 +1,3021 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#string">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Literal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#WorldCities"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gender"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Countries"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#integer">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Literal"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#FeedBackQuestions"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#PakistanCities"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasLocation"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasRating"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#isVisiting"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasLocation">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasYear"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasArea"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasAddress">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#treatBy"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasRating">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDisease">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#giveRating">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasRating"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasCountry"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasGender"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialties">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasStar"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#treats"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasCity"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasVisitingHours2"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasIncomeGroup">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasFeeStructure"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasTiming"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasHospitalName"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialist"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasEmail"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDateOfBirth"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasVisitingHours"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasName"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasContact"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDay"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasAge"/>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Guinea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Maldives">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Timor-Leste">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saint_Kitts_and_Nevis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ragiwara_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Singapore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d2">
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasDegree>
+      <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist">
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#heartpain">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#armpain">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Specialization>
+    </hasDegree>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist"/>
+    <hasFeeStructure>100</hasFeeStructure>
+    <hasHospitalName>Al-Ibrahim Eye Hospital, Gadap Town, Malir</hasHospitalName>
+    <hasCity>
+      <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </PakistanCities>
+    </hasCity>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasName>Haji Haroon</hasName>
+    <hasDay>Monday</hasDay>
+    <hasContact>123</hasContact>
+    <hasSystemRating>0.0</hasSystemRating>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <hasGender>
+      <Gender rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Gender>
+    </hasGender>
+    <hasEmail>haji@domain.com</hasEmail>
+    <hasCountry>
+      <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Countries>
+    </hasCountry>
+    <hasVisitingHours>12:59</hasVisitingHours>
+    <hasDateOfBirth>2016-12-31</hasDateOfBirth>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasId>d2</hasId>
+  </owl:NamedIndividual>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nasir_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Congo,_Republic_of_the">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulzar_Colony">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mauritania">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#North_Nazimabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Argentina">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Degree rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree1">
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#toothache">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Degree>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hotel_Metropole__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulshan-e-Iqbal__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Qasba_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Reta_Plot_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Razmak">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bahamas,_The">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Georgia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Delhi_Mercentile_Society_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bhutta_Village_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d3">
+    <hasDay>Saturday</hasDay>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasContact>123</hasContact>
+    <hasName>Haji Haroon</hasName>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasCity>
+      <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </PakistanCities>
+    </hasCity>
+    <hasDegree>
+      <Degree rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#MBBS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Degree>
+    </hasDegree>
+    <hasHospitalName>Bharat lal batra hospital</hasHospitalName>
+    <hasVisitingHours2>13:59</hasVisitingHours2>
+    <hasDateOfBirth>1990-12-31</hasDateOfBirth>
+    <hasVisitingHours>13:59</hasVisitingHours>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasId>d3</hasId>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasFeeStructure>100000</hasFeeStructure>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist"/>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Aisha_Manzil">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasEmail>haji@domain.com</hasEmail>
+  </Doctor>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Peshawar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shah_Faisal_Colony__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Guyana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Switzerland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#South_Korea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kenya">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Degree rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree2">
+    <Covers>
+      <Disease rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#jaundice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Disease>
+    </Covers>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Degree>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bagh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Diamer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Metrovil_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saddar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#China">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kemari_Town">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cambodia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nawabshah">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Federal_B_Area__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kyrgyzstan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Gender rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Other">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Gender>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Macedonia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Qilla_Abdullah_District">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Muzaffarabad_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Moinabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Old_Haji_Camp_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Quetta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Macau">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hanifabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kosovo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nishter_Road">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nazimabad__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#North_Karachi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Fiji">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Korea,_North">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Australia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#City_GPO_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi_Airport__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dominican_Republic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Swaziland_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ghaziabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Farooq-e-Azam_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rafa-e-Aam_Society__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Faisalabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sahiwal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rwanda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bolivia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Belgium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jamrud">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#East_Timor_(see_Timor-Leste)">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Slovakia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#National_Cement_Industry-_DALMIA__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sindh_Governor_HouseAbbasi_Shaheed_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sherabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Songal_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulshan-e-Saeed_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ghana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Luxembourg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Senegal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Oman">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jordan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mexico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Iceland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Garden_East_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kohat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Azerbaijan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#SITE__Area">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sukkur_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mirpur_Khas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hungary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nepal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Korea,_South">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Poland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Quaidabad__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Manghopir__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mustafa_Taj_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Commercial_Area_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kemari_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Astore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mujahidabad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Malta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Iran">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saint_Lucia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Landi_Kotal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bhimber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Thatta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Buffer_zone-1_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Turkey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan_Machine_Tool_Factory__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sri_Lanka">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cuba">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gaghar-07">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Palau">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Essa_Nagri_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Export_Processing_Zone__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saudi_Arabia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Lebanon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Liberia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasId"/>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jamshed_Quarter_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cameroon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#ENT">
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#throatpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#nosepain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hearingproblem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#eyespain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#earpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#blurvision">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Specialization>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Habib_Bank__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khokarapar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Vietnam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kharadar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Comoros">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Haidery_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ireland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Muslim_Mujahid_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hunza_Nagar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Muzaffarabad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Chad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#United_Arab_Emirates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cote_d&apos;Ivoire">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Aruba">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Islam_Nagar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Chisti_Nagar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Audiologist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Specialization>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Baghdadi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Super_Market_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Manzoor_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Paraguay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Liaqatabad__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Awami_Colony">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Makeen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Parachinar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Burmi_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mangopir_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Clifton_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Iraq">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saeedabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Madina_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ancholi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sheikhupura_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mirpur">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Baloch_Goth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Miranshah">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Patient rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p1">
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasDateOfBirth>2015-11-30</hasDateOfBirth>
+    <hasIncomeGroup>0 - 10,000</hasIncomeGroup>
+    <hasName>sobia</hasName>
+    <hasContact>923002128274</hasContact>
+    <hasId>p1</hasId>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasEmail>sobia@gmail.com</hasEmail>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Patient>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Korangi_Creek__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#San_Marino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sierra_Leone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#15">
+    <hasName>How much time did the doctor take in diagnosis?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#South_Africa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mali">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Rating rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Rating>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Lesotho">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Greece">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nasirabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gazdarabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Port_Muhammad_Bin_Qasim__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <swrl:Imp>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:argument2>
+                  <swrl:Variable rdf:about="urn:swrl#y"/>
+                </swrl:argument2>
+                <swrl:argument1>
+                  <swrl:Variable rdf:about="urn:swrl#x"/>
+                </swrl:argument1>
+                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:IndividualPropertyAtom>
+                    <swrl:argument2>
+                      <swrl:Variable rdf:about="urn:swrl#z"/>
+                    </swrl:argument2>
+                    <swrl:argument1>
+                      <swrl:Variable rdf:about="urn:swrl#w"/>
+                    </swrl:argument1>
+                    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDisease"/>
+                  </swrl:IndividualPropertyAtom>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#z"/>
+            <swrl:argument1 rdf:resource="urn:swrl#y"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#x"/>
+            <swrl:argument1 rdf:resource="urn:swrl#w"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Tonga">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Clifton__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Civic_Centre_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karimabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Uganda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Qasiambad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rasheedabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Swabi_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mingora_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#New_Zealand">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ghabool_Town_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#16">
+    <hasName>On the scale of 1-10, (1 being the lowest and 10 being the highest), mention your extent of satisfaction?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Germany">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Portugal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rizvia_Society_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hyderabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Central_African_Republic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d8">
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Banaras_Colony_">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasId>d8</hasId>
+    <hasDegree>
+      <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist">
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#toothache"/>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#gumpain">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Specialization>
+    </hasDegree>
+    <hasEmail>shoaib@domain.com</hasEmail>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasFeeStructure>1200</hasFeeStructure>
+    <hasSpecialties>
+      <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Urologist">
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#UrineProblem">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Specialization>
+    </hasSpecialties>
+    <hasDateOfBirth>1990-12-31</hasDateOfBirth>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasHospitalName>Burhani Hospital Trust</hasHospitalName>
+    <hasContact>123</hasContact>
+    <hasVisitingHours>00:59</hasVisitingHours>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasName>shoaib</hasName>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasDay>Monday</hasDay>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rehri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gadap_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nasirabad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#New_Karachi__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gujranwala_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Zambia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#13">
+    <hasName>Would you be happy to see the doctor again?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Benin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Disease rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Malaria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Disease>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sharifabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mominabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#India">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Thailand_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Tuvalu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khairpur">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Seychelles">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jhang_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mardan_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Darsano_Chana_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#City_Railway_Station_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d9">
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasName>mansoor</hasName>
+    <hasDateOfBirth>1960-11-30</hasDateOfBirth>
+    <hasHospitalName>Al-Ibrahim Eye Hospital, Gadap Town, Malir</hasHospitalName>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasDay>Tuesday</hasDay>
+    <hasEmail>mansoor@gmail.com</hasEmail>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Banaras_Colony_"/>
+    <hasVisitingHours>23:58</hasVisitingHours>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasContact>123</hasContact>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasFeeStructure>10000</hasFeeStructure>
+    <hasId>d9</hasId>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulzar-E-Hijri_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Albania">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kala_Board_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSystemRating"/>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Congo,_Democratic_Republic_of_the">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shigar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Japan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jaffarabad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Murad_Memon_Goth__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Maripur_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Antigua_and_Barbuda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#14">
+    <hasName>Do you think the doctor is good and will give you the right care?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mehmoodabad__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Rating rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Rating>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bhutan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Barbados">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Vanuatu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#6">
+    <hasName>Did the doctor understand and ask questions regarding your health history?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Turbat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Tajikistan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d6">
+    <hasDay>Monday</hasDay>
+    <hasName>taha</hasName>
+    <hasDegree>
+      <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dermatologist">
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#skinproblem">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#rashes">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#pimples">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#lumps">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#cyst">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Specialization>
+    </hasDegree>
+    <hasVisitingHours>12:59</hasVisitingHours>
+    <hasDateOfBirth>1970-11-30</hasDateOfBirth>
+    <hasEmail>taha@gmail.com</hasEmail>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasHospitalName>Children Hospital</hasHospitalName>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Urologist"/>
+    <hasFeeStructure>123</hasFeeStructure>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasContact>123</hasContact>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasId>d6</hasId>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gabo_Pat_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi_GPO__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Model_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hakeem_Ahsan_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Brunei_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Solomon_Islands">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mustufa_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#11">
+    <hasName>Did the doctor give advice to you on ways to stay healthy?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Madagascar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Israel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Faisal_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Rating rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Rating>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#5">
+    <hasName>Did the doctor give you ample time?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#PECHS__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d7">
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasEmail>siri@gmail.com</hasEmail>
+    <hasId>d7</hasId>
+    <hasDay>Monday</hasDay>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasDateOfBirth>1992-11-30</hasDateOfBirth>
+    <hasHospitalName>Dow University Hospital</hasHospitalName>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_"/>
+    <hasContact>123</hasContact>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasVisitingHours>12:59</hasVisitingHours>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Urologist"/>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist"/>
+    <hasName>siridevi</hasName>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Agra_Taj_Colony">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasFeeStructure>123</hasFeeStructure>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Muslimabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nigeria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Armenia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#P.I.B._Colony">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Burundi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <swrl:Imp>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#z"/>
+            <swrl:argument1 rdf:resource="urn:swrl#y"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialties"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#z"/>
+            <swrl:argument1 rdf:resource="urn:swrl#x"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#treats"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#12">
+    <hasName>Did the doctor treated you well?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sargodha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Burma">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Rating rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Rating>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#8">
+    <hasName>Did the doctor explain drugs, other treatments, their expected effects and side effects?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Venezuela">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d4">
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist"/>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasId>d4</hasId>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist"/>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasVisitingHours>00:59</hasVisitingHours>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Akhtar_Colony">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasDay>Wednesday</hasDay>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+    <hasContact>123</hasContact>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasFeeStructure>2</hasFeeStructure>
+    <hasDateOfBirth>1965-12-31</hasDateOfBirth>
+    <hasEmail>haji@domain.com</hasEmail>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <hasName>Haji Haroon</hasName>
+  </owl:NamedIndividual>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Quaidabad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Lahore_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Moldova">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cape_Verde">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nawabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Libya">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shirafi_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Togo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Darya_Abad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#9">
+    <hasName>Did the doctor answer questions to your satisfaction?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Safoora_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Rating rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Rating>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nowshera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khuzdar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#7">
+    <hasName>Did the doctor discuss treatment option with you?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Korangi_Sector_33_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d5">
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dermatologist"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasName>iqbal</hasName>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasVisitingHours>10:58</hasVisitingHours>
+    <hasHospitalName>Children Hospital</hasHospitalName>
+    <hasDay>Monday</hasDay>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dermatologist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasDateOfBirth>2005-06-22</hasDateOfBirth>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasId>d5</hasId>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasEmail>iqbal@gmail.com</hasEmail>
+    <hasFeeStructure>123</hasFeeStructure>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Banaras_Colony_"/>
+    <hasContact>321</hasContact>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#PCSIR__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ethiopia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Brazil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan_Steel_Mills__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Peru">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Micronesia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shah_Baig_Line_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mauritius">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Marshall_Islands">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Colombia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khawaja_Ajmer_Nagri_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#10">
+    <hasName>Did the doctor give you advice on what to do if symptoms persist or worsen?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Alizai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pak_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jahanabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#2">
+    <hasName>Was the doctor attentive?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Patient rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p11">
+    <hasDateOfBirth>2015-11-30</hasDateOfBirth>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_"/>
+    <hasName>waled</hasName>
+    <hasContact>+923222808980</hasContact>
+    <hasIncomeGroup>0 - 10,000</hasIncomeGroup>
+    <hasId>p11</hasId>
+    <hasEmail>waled@gmail.com</hasEmail>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+  </Patient>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi_Cantt___">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Netherlands">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gabon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d15">
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasDay>Monday</hasDay>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasEmail>rashid@gmail.com</hasEmail>
+    <hasName>rashid</hasName>
+    <hasHospitalName>Burhani Hospital Trust</hasHospitalName>
+    <hasContact>+923222808980</hasContact>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Azizabad">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <hasFeeStructure>100</hasFeeStructure>
+    <hasVisitingHours>12:59</hasVisitingHours>
+    <hasDateOfBirth>1963-11-30</hasDateOfBirth>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasId>d15</hasId>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasVisitingHours2>11:00</hasVisitingHours2>
+  </owl:NamedIndividual>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jacobabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Turkmenistan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Malir_City__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Estonia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Address rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Address>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#1">
+    <hasName>Was the doctor respectful?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#New_Town__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulshan-E-Iqbal_II_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Curacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Laos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Korangi_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cyprus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d16">
+    <hasEmail>rashid@gmail.com</hasEmail>
+    <hasVisitingHours2>09:00</hasVisitingHours2>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasFeeStructure>1200</hasFeeStructure>
+    <hasVisitingHours>11:57</hasVisitingHours>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasHospitalName>Combined Military Hospital</hasHospitalName>
+    <hasContact>+923222808981</hasContact>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasId>d16</hasId>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasDateOfBirth>1956-11-30</hasDateOfBirth>
+    <hasDegree>
+      <Degree rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Degree>
+    </hasDegree>
+    <hasName>rashid</hasName>
+    <hasDay>Wednesday</hasDay>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Allama_Iqbal_Colony">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Data_Nagar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan_Naval_Armament_Depot__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Finland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jamil_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#physician">
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#throatpain"/>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#earpain"/>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#breathingproblem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#neckpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#nausea">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#nosepain"/>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#stomachache">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#wristpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#feetpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#armpain"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Allergy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#yelloweyes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#backpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#fingerpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#eyespain"/>
+  </Specialization>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Maripur-FA__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Malaysia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Malawi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mujahid_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Burkina_Faso">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jafar-E-Tayyar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bosnia_and_Herzegovina">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Qatar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ghazi_Brohi_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gujrat_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rifah_Aam_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#4">
+    <hasName>Was the doctor telling things properly?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#heartbeatfast">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Symptoms>
+  <Address rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Address>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Old_Golimar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Montenegro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d17">
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Akhtar_Colony"/>
+    <hasVisitingHours>10:58</hasVisitingHours>
+    <hasDateOfBirth>1980-09-28</hasDateOfBirth>
+    <hasSpecialties>
+      <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Psychologist">
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Depression">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Anxiety">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Specialization>
+    </hasSpecialties>
+    <hasEmail>zaeem@gmail.com</hasEmail>
+    <hasId>d17</hasId>
+    <hasGender>
+      <Gender rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Female">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Gender>
+    </hasGender>
+    <hasVisitingHours2>10:00</hasVisitingHours2>
+    <hasContact>+923222808980</hasContact>
+    <hasHospitalName>Dow University Hospital</hasHospitalName>
+    <hasName>zaeem</hasName>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasFeeStructure>100</hasFeeStructure>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasDay>Monday</hasDay>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Itahad_Town_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Honduras">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan_Quarters_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kuwait">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bin_Qaism_Town">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kiribati">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shahra-e-Faisal__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ghulam_Khana_mehrabpur">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p7">
+    <hasDateOfBirth>1990-05-10</hasDateOfBirth>
+    <hasContact>+923541541541</hasContact>
+    <hasId>p7</hasId>
+    <hasEmail>ahsanaftab@gmail.com</hasEmail>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasIncomeGroup>10,000 - 25,000</hasIncomeGroup>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <hasName>Ahsan Aftab</hasName>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+  </owl:NamedIndividual>
+  <Patient rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p9">
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasId>p9</hasId>
+    <hasDateOfBirth>2015-11-30</hasDateOfBirth>
+    <hasContact>+923222808980</hasContact>
+    <hasName>moin</hasName>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasEmail>moin@gmail.com</hasEmail>
+    <hasIncomeGroup>0 - 10,000</hasIncomeGroup>
+  </Patient>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Iqbal_Baloch_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulshan-E-Hadeed_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#3">
+    <hasName>Was the doctor concerned?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Lithuania">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#On_the_scale_of_1-10,_(1_being_the_lowest_and_10_being_the_highest),_mention_your_extent_of_satisfaction?*"/>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d18">
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Aisha_Manzil"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasContact>+923222808980</hasContact>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasVisitingHours>23:58</hasVisitingHours>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Female"/>
+    <hasDay>Wednesday</hasDay>
+    <hasFeeStructure>123</hasFeeStructure>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasHospitalName>Karachi Institute of Radiotherapy and Nuclear Medicine</hasHospitalName>
+    <hasDateOfBirth>1964-09-28</hasDateOfBirth>
+    <hasName>zaeem</hasName>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasId>d18</hasId>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Psychologist"/>
+    <hasEmail>zaeem@gmail.com</hasEmail>
+  </Doctor>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#United_Kingdom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Egypt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rondo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sweden">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Uruguay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Fatima_Jinnah_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Multan_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p8">
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Defence_Society__">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasContact>+923222808980</hasContact>
+    <hasIncomeGroup>25,000 - 50,000</hasIncomeGroup>
+    <hasId>p8</hasId>
+    <hasEmail>dsu121cs021@gmail.com</hasEmail>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasDateOfBirth>0002-02-08</hasDateOfBirth>
+    <hasName>Muhammad Qaisar</hasName>
+  </owl:NamedIndividual>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Denmark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Chakiwara_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hasrat_Mohani_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#El_Salvador">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d19">
+    <hasName>Moiz Khan</hasName>
+    <hasDateOfBirth>2000-12-31</hasDateOfBirth>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasVisitingHours>12:00</hasVisitingHours>
+    <hasEmail>moiz@gmail.com</hasEmail>
+    <hasContact>+923222808980</hasContact>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasId>d19</hasId>
+    <hasDay>Monday</hasDay>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasFeeStructure>100</hasFeeStructure>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+  </Doctor>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sint_Maarten">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ibraheem_Hyderi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saddar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Costa_Rica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Muhajir_Camp_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Algeria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Islamia_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p5">
+    <hasContact>1000222</hasContact>
+    <hasName>Hammad</hasName>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Banaras_Colony_"/>
+    <hasCountry>
+      <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Belarus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Countries>
+    </hasCountry>
+    <hasDateOfBirth>2016-04-26</hasDateOfBirth>
+    <hasId>p5</hasId>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Female"/>
+    <hasEmail>hammad@gmail.com</hasEmail>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_"/>
+    <hasIncomeGroup>25,000 - 50,000</hasIncomeGroup>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+  </owl:NamedIndividual>
+  <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#handpain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Symptoms>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Paposh_Nagar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Natha_Khan_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Panama">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gujro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Lasbela">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Daud_Colon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Chakra_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nauru">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Zaman_Town">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Latvia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Moria_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shadman_Town_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Botswana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Trinidad_and_Tobago">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jinnah_Post_Graduate_Medical_Center__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p6">
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasContact>+923214568548</hasContact>
+    <hasName>shahrukh haider</hasName>
+    <hasName>Ali Ahsan</hasName>
+    <hasDateOfBirth>2010-05-10</hasDateOfBirth>
+    <hasEmail>sharukh@gmail.com</hasEmail>
+    <hasContact>+923547858741</hasContact>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Female"/>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasDateOfBirth>2016-12-31</hasDateOfBirth>
+    <hasContact>+923222808980</hasContact>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Banaras_Colony_"/>
+    <hasEmail>aliahsan@gmail.com</hasEmail>
+    <hasIncomeGroup>25,000 - 50,000</hasIncomeGroup>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <hasDateOfBirth>2014-11-29</hasDateOfBirth>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasIncomeGroup>0 - 10,000</hasIncomeGroup>
+    <hasId>p6</hasId>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasIncomeGroup>10,000 - 25,000</hasIncomeGroup>
+  </owl:NamedIndividual>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bangladesh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gadap_Town">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Metrovill_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Zhob">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Drigue_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Murad_Memon_Goth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Tanzania">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Civil_Line_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Haiti">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Timatar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <FeedBackQuestions rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#0">
+    <hasName>Was the doctor warm and friendly?*</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </FeedBackQuestions>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Taiwan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#France">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Guatemala">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Morocco">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Liechtenstein">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kazakhstan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Lyari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nanak_Wara_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Patient rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p3">
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasDateOfBirth>2015-12-01</hasDateOfBirth>
+    <hasIncomeGroup>0 - 10,000</hasIncomeGroup>
+    <hasContact>123</hasContact>
+    <hasName>Goku</hasName>
+    <hasEmail>goku@gmail.com</hasEmail>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasId>p3</hasId>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Behar_Colony_">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Female"/>
+  </Patient>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Spain_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sudan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Machar_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sher_Shah_Colony__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pahar_Ganj_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Syria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Soldier_Bazar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sultanabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gilgit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Azam_Basti">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gupi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gwadar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jamshed_Town">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Zimbabwe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ukraine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gillani_Railway_Station_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gharibabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p4">
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasId>p4</hasId>
+    <hasIncomeGroup>25,000 - 50,000</hasIncomeGroup>
+    <hasEmail>masood@gmail.com</hasEmail>
+    <hasName>Masood Mehmood</hasName>
+    <hasDateOfBirth>2016-05-09</hasDateOfBirth>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bilal_Colony_">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasContact>+923232431518</hasContact>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+  </owl:NamedIndividual>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulshan-E-Iqbal_I_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cattle_Colony">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#PechsII_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Canada">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sibi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Philippines">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khameeso_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Hong_Kong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ophthalmologist">
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#yelloweyes"/>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#redeyes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#eyespain"/>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#blurvision"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Specialization>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Slovenia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Singo_Line_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dominica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Respirationproblem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Symptoms>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pathan_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nai_Abbadi_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Somalia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sadda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Italy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Godhra_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Baba_Bhit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mir_Ali">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Model_Colony__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Namibia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Manora__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Frontier_Colony">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Djibouti">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d20">
+    <hasCity>
+      <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bahawalpur_">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </PakistanCities>
+    </hasCity>
+    <hasEmail>moiz@gmail.com</hasEmail>
+    <hasContact>+923222808980</hasContact>
+    <hasVisitingHours2>10:50</hasVisitingHours2>
+    <hasId>d20</hasId>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasVisitingHours>11:00</hasVisitingHours>
+    <hasHospitalName>Institute of Infection Diseases</hasHospitalName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasFeeStructure>100</hasFeeStructure>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasDay>Monday</hasDay>
+    <hasName>Moiz Khan</hasName>
+    <hasDateOfBirth>2000-12-31</hasDateOfBirth>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Allama_Iqbal_Colony"/>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Chanesar_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gambia,_The">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mongolia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rawlakot">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Angola">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pechs_I_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khada_Memon_Society__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bannu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Russia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Serbia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kharmang">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saudabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Water_Pump_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Monaco">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Grenada">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Yaseenabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Andorra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Chile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Equatorial_Guinea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jut_Line_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d21">
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#MBBS"/>
+    <hasSpecialties>
+      <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Anesthesiology">
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#dryeyes">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Specialization>
+    </hasSpecialties>
+    <hasId>d21</hasId>
+    <hasFeeStructure>100</hasFeeStructure>
+    <hasContact>+923232471325</hasContact>
+    <hasDay>Monday</hasDay>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasDateOfBirth>1965-05-26</hasDateOfBirth>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Baldia_Town">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasName>TempD</hasName>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasCity>
+      <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ghizer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </PakistanCities>
+    </hasCity>
+    <hasVisitingHours2>10:00</hasVisitingHours2>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasEmail>d@domain.com</hasEmail>
+    <hasVisitingHours>12:01</hasVisitingHours>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+  </owl:NamedIndividual>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#North_Korea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Uzbekistan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Yousuf_Goth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Niger">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Romania">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sir_Syed_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Korangi_GPO__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <swrl:Imp>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument1 rdf:resource="urn:swrl#z"/>
+            <swrl:argument2 rdf:resource="urn:swrl#x"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#treatBy"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialties"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#z"/>
+            <swrl:argument1 rdf:resource="urn:swrl#y"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rheumatologist">
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#pimples"/>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Specialization>
+  <swrl:Imp>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:IndividualPropertyAtom>
+                    <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms"/>
+                  </swrl:IndividualPropertyAtom>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#z"/>
+            <swrl:argument1 rdf:resource="urn:swrl#y"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#x"/>
+            <swrl:argument1 rdf:resource="urn:swrl#w"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#COD__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Netherlands_Antilles">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Croatia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Belize">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Garden_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Tunisia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Firdos_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi_University__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d10">
+    <hasId>d10</hasId>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulistan-e-Johr">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasDay>Wednesday</hasDay>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasVisitingHours2>10:00</hasVisitingHours2>
+    <hasVisitingHours>12:58</hasVisitingHours>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasSystemRating>0.0</hasSystemRating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasHospitalName>Civil Hospital</hasHospitalName>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasFeeStructure>500</hasFeeStructure>
+    <hasName>zohaib</hasName>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasEmail>zohaib@gmail.com</hasEmail>
+    <hasDateOfBirth>2015-11-29</hasDateOfBirth>
+    <hasContact>9232223214569</hasContact>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+  </Doctor>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Indonesia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d22">
+    <hasName>rashid</hasName>
+    <hasId>d22</hasId>
+    <hasHospitalName>Al-Ibrahim Eye Hospital, Gadap Town, Malir</hasHospitalName>
+    <hasVisitingHours2>10:00</hasVisitingHours2>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_"/>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasContact>+923222808981</hasContact>
+    <hasSystemRating>0.0</hasSystemRating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasEmail>rashid@gmail.com</hasEmail>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasVisitingHours>00:59</hasVisitingHours>
+    <hasFeeStructure>1000</hasFeeStructure>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+    <hasDay>Monday</hasDay>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasDateOfBirth>2015-11-30</hasDateOfBirth>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+  </Doctor>
+  <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Phobia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Symptoms>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulshan-E-Ghazi_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#South_Sudan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bhutto_Nagar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nazimabad_No.01_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Suriname">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Charsadda_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Yemen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Papua_New_Guinea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bara">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gynecologist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Specialization>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Saint_Vincent_and_the_Grenadines">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Millat_Nagar/Islam_Pura_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mohammad_Nagar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dera_Ismail_Khan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jatlan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Haryana_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <swrl:Imp>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#x"/>
+            <swrl:argument1 rdf:resource="urn:swrl#w"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="urn:swrl#z"/>
+            <swrl:argument1 rdf:resource="urn:swrl#y"/>
+            <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialties"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:IndividualPropertyAtom>
+                    <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms"/>
+                  </swrl:IndividualPropertyAtom>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shafeeque_Mill_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d11">
+    <hasVisitingHours2>10:00</hasVisitingHours2>
+    <hasDateOfBirth>1986-02-27</hasDateOfBirth>
+    <hasContact>323016666666</hasContact>
+    <hasId>d11</hasId>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Agra_Taj_Colony"/>
+    <hasVisitingHours>11:00</hasVisitingHours>
+    <hasFeeStructure>300</hasFeeStructure>
+    <hasDay>Monday</hasDay>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasEmail>aftabkhan@gmail.com</hasEmail>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+    <hasName>Aftab Khan</hasName>
+  </Doctor>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Palestinian_Territories">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khaar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nicaragua">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d23">
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasVisitingHours>12:59</hasVisitingHours>
+    <hasName>Kaka</hasName>
+    <hasId>d23</hasId>
+    <hasFeeStructure>100</hasFeeStructure>
+    <hasDay>Monday</hasDay>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_"/>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#MBBS"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Agra_Taj_Colony"/>
+    <hasContact>+923232525254</hasContact>
+    <hasVisitingHours2>11:00</hasVisitingHours2>
+    <hasEmail>kaka@domain.com</hasEmail>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <hasSpecialties>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#None">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasSpecialties>
+    <hasSpecialist>No</hasSpecialist>
+    <hasDateOfBirth>1972-12-31</hasDateOfBirth>
+  </owl:NamedIndividual>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Austria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Afghanistan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Podiatrist">
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#legpain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#kneepain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#feetpain"/>
+    <Covers>
+      <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#anklepain">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Symptoms>
+    </Covers>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Specialization>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Board_of_Secondary_Education__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Nusrat_Bhutto_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Islamabad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rawalpindi_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Orangi_Town">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khando_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Jamaica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Skardu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shershah_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Landhi_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bahrain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Holy_See">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d12">
+    <hasVisitingHours2>07:00</hasVisitingHours2>
+    <hasHospitalName>Karachi Institute of Radiotherapy and Nuclear Medicine</hasHospitalName>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasDay>Wednesday</hasDay>
+    <hasId>d12</hasId>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Behar_Colony_"/>
+    <hasVisitingHours>17:00</hasVisitingHours>
+    <hasDateOfBirth>1986-02-27</hasDateOfBirth>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasName>Aftab Khan</hasName>
+    <hasContact>323016666666</hasContact>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasFeeStructure>500</hasFeeStructure>
+    <hasEmail>aftabkhan@gmail.com</hasEmail>
+  </Doctor>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gultari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mozambique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d24">
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Allama_Iqbal_Colony"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasId>d24</hasId>
+    <hasSpecialist>No</hasSpecialist>
+    <hasDateOfBirth>1993-12-31</hasDateOfBirth>
+    <hasName>Kaka</hasName>
+    <hasContact>+923232525254</hasContact>
+    <hasFeeStructure>5</hasFeeStructure>
+    <hasEmail>kaka@domain.com</hasEmail>
+    <hasCity>
+      <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ghangche">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </PakistanCities>
+    </hasCity>
+    <hasDay>Wednesday</hasDay>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#None"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasHospitalName>Burhani Hospital Trust</hasHospitalName>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#MBBS"/>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasVisitingHours>12:59</hasVisitingHours>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+  </Doctor>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Ecuador">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Norway">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pehlwan_Goth_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pak_Sadat_Colony">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Buffer_Zone_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bulgaria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kotli">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Central_Jacob_Lines_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Larkana_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Bandhani_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#MariPur-CE_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sakhi_Hasan_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d25">
+    <hasVisitingHours>12:00</hasVisitingHours>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasContact>+923222808980</hasContact>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasEmail>fyp@demo.com</hasEmail>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+    <hasId>d25</hasId>
+    <hasDay>Monday</hasDay>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_"/>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasFeeStructure>1000</hasFeeStructure>
+    <hasDateOfBirth>1980-05-26</hasDateOfBirth>
+    <hasName>FYPDemo</hasName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+  </owl:NamedIndividual>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kehkashan_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d13">
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasVisitingHours>13:00</hasVisitingHours>
+    <hasFeeStructure>4000</hasFeeStructure>
+    <hasVisitingHours2>11:00</hasVisitingHours2>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasEmail>abc@gmail.com</hasEmail>
+    <hasSpecialties>
+      <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Neurologist">
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#nausea"/>
+        <Covers>
+          <Symptoms rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#headache">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </Symptoms>
+        </Covers>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Specialization>
+    </hasSpecialties>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Baldia_Town"/>
+    <hasContact>123</hasContact>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasId>d13</hasId>
+    <hasName>hammad</hasName>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Neurologist"/>
+    <hasDateOfBirth>1990-12-31</hasDateOfBirth>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasDay>Monday</hasDay>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Doctor>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Malir_Cantt__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Eritrea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Khawaja_Ajmeer_Nagri_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Maymarabad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shah_Nawaz_Bhutto_Colony_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Samoa_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Patient rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#p10">
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasId>p10</hasId>
+    <hasEmail>p1@domain.com</hasEmail>
+    <hasDateOfBirth>2004-05-03</hasDateOfBirth>
+    <hasIncomeGroup>10,000 - 25,000</hasIncomeGroup>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasName>Patient1</hasName>
+    <hasContact>+923222808980</hasContact>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Aisha_Manzil"/>
+  </Patient>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sao_Tome_and_Principe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Guinea-Bissau">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dak_Khana_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Mehmoodabad_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shikarpur">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Countries rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Czech_Republic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Countries>
+  <Doctor rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d14">
+    <hasDateOfBirth>1991-01-01</hasDateOfBirth>
+    <hasContact>123</hasContact>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasId>d14</hasId>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+    <hasFeeStructure>10000</hasFeeStructure>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasVisitingHours>13:00</hasVisitingHours>
+    <hasName>hammad</hasName>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Banaras_Colony_"/>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasEmail>abc@gmail.com</hasEmail>
+    <hasDay>Tuesday</hasDay>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dermatologist"/>
+    <hasHospitalName>Civil Hospital</hasHospitalName>
+  </Doctor>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#d26">
+    <hasEmail>fyp@demo.com</hasEmail>
+    <hasDay>Monday</hasDay>
+    <hasHospitalName>Abbasi Shaheed Hospital (ASH)</hasHospitalName>
+    <hasFeeStructure>500</hasFeeStructure>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abu_Zar_Ghaffari"/>
+    <hasContact>+923458458458</hasContact>
+    <hasFeeStructure>1000</hasFeeStructure>
+    <hasDateOfBirth>1990-12-31</hasDateOfBirth>
+    <hasCountry rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Pakistan"/>
+    <hasEmail>furqan@gmail.com</hasEmail>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Dentist"/>
+    <hasContact>123</hasContact>
+    <hasDay>Tuesday</hasDay>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Abbottabad_"/>
+    <hasGender rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Male"/>
+    <hasHospitalName>Al-Ibrahim Eye Hospital, Gadap Town, Malir</hasHospitalName>
+    <hasContact>+923222808980</hasContact>
+    <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    <hasSpecialist>Yes</hasSpecialist>
+    <hasFeeStructure>1234</hasFeeStructure>
+    <hasVisitingHours>12:00</hasVisitingHours>
+    <hasArea>
+      <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Al_Falah_Society">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </Location>
+    </hasArea>
+    <hasName>owais</hasName>
+    <hasSpecialist>No</hasSpecialist>
+    <hasSystemRating>0.0</hasSystemRating>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#None"/>
+    <hasName>FYPDemo</hasName>
+    <hasName>Furqaan</hasName>
+    <hasSpecialties rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist"/>
+    <hasDateOfBirth>2001-11-30</hasDateOfBirth>
+    <hasVisitingHours2>00:00</hasVisitingHours2>
+    <hasEmail>owais@gmail.com</hasEmail>
+    <hasArea rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Akhtar_Colony"/>
+    <hasCity rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Karachi"/>
+    <hasVisitingHours2>13:59</hasVisitingHours2>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#BDS"/>
+    <hasEmail>haji@domain.com</hasEmail>
+    <hasFeeStructure>100</hasFeeStructure>
+    <hasName>Haji Haroon</hasName>
+    <hasId>d26</hasId>
+    <hasVisitingHours2>15:00</hasVisitingHours2>
+    <hasVisitingHours>14:00</hasVisitingHours>
+    <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#MBBS"/>
+    <hasDateOfBirth>2008-05-26</hasDateOfBirth>
+    <hasVisitingHours>12:59</hasVisitingHours>
+  </owl:NamedIndividual>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Landhi_Colony__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Darul-uloom__">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Sialkot_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gulberg_Town">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <PakistanCities rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Darra_Adam_Khel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </PakistanCities>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Kalyana_District_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Location rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Shanti_Nagar_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Location>
+  <Specialization rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gastrologist">
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#stomachache"/>
+    <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Gastrologist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </Specialization>
+</rdf:RDF>

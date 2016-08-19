@@ -1,0 +1,16 @@
+Anesthesiology
+Audiologist
+Cardiologist
+Dentist
+Dermatologist
+ENT
+Gastrologist
+Gynecologist
+Neurologist
+Ophthalmologist
+physician
+Podiatrist
+Psychologist
+Rheumatologist
+Urologist
+Specialties

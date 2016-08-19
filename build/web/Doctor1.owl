@@ -1,0 +1,1097 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13">
+    <Prefix name="" IRI="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Degree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Literal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specialization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#integer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#string"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Covers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canHaveDoctor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#giveRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDay"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDegree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDisease"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeeStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHospitalName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIncomeGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpecialist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpecialties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptoms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVisitingHours"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVisiting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Address1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Address2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cardiologist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ghafar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Haris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jibran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nabil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neurologist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Optician"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patient1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patient2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qaiser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rating2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rating3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rating4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rating5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RehmanKhan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#armpain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blurvision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#degree1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#degree2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dryeyes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#headache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#heartpain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ibra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jaundice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kela"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#khan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#legpain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ll"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mehra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nausea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#naveed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rahem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ramezkhan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rony"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stomachache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#toothache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yelloweyes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasArea"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasContact"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasDateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasDay"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasDegree"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasFeeStructure"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasHospitalName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasSpecialist"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasSpecialties"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasVisitingHours"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Degree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Covers"/>
+            <Class IRI="#Disease"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Degree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Covers"/>
+            <Class IRI="#Symptoms"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Doctor"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDegree"/>
+                <Class IRI="#Degree"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasLocation"/>
+                <Class IRI="#Location"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Class IRI="#Rating"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Patient"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAddress"/>
+                <Class IRI="#Address"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSymptoms"/>
+                <Class IRI="#Symptoms"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Specialization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Covers"/>
+            <Class IRI="#Disease"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Specialization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Covers"/>
+            <Class IRI="#Symptoms"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Address"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#integer"/>
+        <Class IRI="#Literal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#string"/>
+        <Class IRI="#Literal"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Address"/>
+        <NamedIndividual IRI="#Address1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Address"/>
+        <NamedIndividual IRI="#Address2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Alee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Specialization"/>
+        <NamedIndividual IRI="#Cardiologist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Ghafar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Haris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Jibran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disease"/>
+        <NamedIndividual IRI="#Malaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#Nabil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Specialization"/>
+        <NamedIndividual IRI="#Neurologist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Specialization"/>
+        <NamedIndividual IRI="#Optician"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Patient1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Patient2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#Qaiser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#Rating1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#Rating2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#Rating3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#Rating4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#Rating5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#RehmanKhan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#ali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#armpain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#blurvision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Degree"/>
+        <NamedIndividual IRI="#degree1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Degree"/>
+        <NamedIndividual IRI="#degree2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#dryeyes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#headache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#heartpain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#ibra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disease"/>
+        <NamedIndividual IRI="#jaundice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#kaka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#kela"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#khan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#lali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#legpain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#ll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#mehra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#naveed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#pali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#rahem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#ramezkhan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#rony"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Doctor"/>
+        <NamedIndividual IRI="#salem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#stomachache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#toothache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#yelloweyes"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#Cardiologist"/>
+        <NamedIndividual IRI="#armpain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#Cardiologist"/>
+        <NamedIndividual IRI="#heartpain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#Neurologist"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#Neurologist"/>
+        <NamedIndividual IRI="#headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#Optician"/>
+        <NamedIndividual IRI="#blurvision"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#Optician"/>
+        <NamedIndividual IRI="#dryeyes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#Optician"/>
+        <NamedIndividual IRI="#headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAddress"/>
+        <NamedIndividual IRI="#Patient"/>
+        <NamedIndividual IRI="#Address1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDisease"/>
+        <NamedIndividual IRI="#Patient"/>
+        <NamedIndividual IRI="#jaundice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAddress"/>
+        <NamedIndividual IRI="#Patient1"/>
+        <NamedIndividual IRI="#Address1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#Patient1"/>
+        <NamedIndividual IRI="#yelloweyes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#Patient1"/>
+        <NamedIndividual IRI="#dryeyes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#Patient1"/>
+        <NamedIndividual IRI="#headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAddress"/>
+        <NamedIndividual IRI="#Patient2"/>
+        <NamedIndividual IRI="#Address2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#Patient2"/>
+        <NamedIndividual IRI="#toothache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#degree1"/>
+        <NamedIndividual IRI="#toothache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Covers"/>
+        <NamedIndividual IRI="#degree2"/>
+        <NamedIndividual IRI="#jaundice"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#giveRating"/>
+        <ObjectProperty IRI="#hasRating"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Covers"/>
+        <Class IRI="#Degree"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Covers"/>
+        <Class IRI="#Specialization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canHaveDoctor"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#giveRating"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAddress"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDegree"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDisease"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasName"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasName"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpecialties"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Covers"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Covers"/>
+        <Class IRI="#Symptoms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canHaveDoctor"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#giveRating"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAddress"/>
+        <Class IRI="#Address"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDegree"/>
+        <Class IRI="#Degree"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDisease"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasName"/>
+        <Class IRI="#string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpecialties"/>
+        <Class IRI="#Specialization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <Class IRI="#Symptoms"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Covers"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDegree"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDisease"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canHaveDoctor"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Covers"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDegree"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptoms"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canHaveDoctor"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Covers"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSpecialties"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptoms"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canHaveDoctor"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasArea"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Abu Zar Ghaffari </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasCity"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Abbottabad </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasContact"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12312</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasCountry"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pakistan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDateOfBirth"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2014-12-31</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDay"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Monday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDegree"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anesthesiologist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasEmail"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ibra@gmail.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasFeeStructure"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1200</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasGender"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Male</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasHospitalName"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Al-Ibrahim Eye Hospital, Gadap Town, Malir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasName"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ibra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasSpecialist"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Yes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasSpecialties"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anesthesiology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasVisitingHours"/>
+        <IRI>#ibra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">00:58</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasArea"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Abu Zar Ghaffari </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasCity"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Abbottabad </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasContact"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">123</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasCountry"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Palau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDateOfBirth"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2016-12-31</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDay"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Monday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDegree"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cardiologist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasEmail"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">kaka@a.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasFeeStructure"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1200</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasGender"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Female</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasHospitalName"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bharat lal batra hospital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasName"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">kaka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasSpecialist"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Yes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasSpecialties"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anesthesiology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasVisitingHours"/>
+        <IRI>#kaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12:58</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasArea"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Abu Zar Ghaffari </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasCity"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alizai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasContact"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12312</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasCountry"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Palau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDateOfBirth"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2014-12-31</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDay"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Monday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDegree"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cardiologist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasEmail"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lali@gmail.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasFeeStructure"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">123</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasGender"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Male</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasHospitalName"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bharat lal batra hospital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasName"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lali</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasSpecialist"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Yes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasSpecialties"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anesthesiology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasVisitingHours"/>
+        <IRI>#lali</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12:59</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

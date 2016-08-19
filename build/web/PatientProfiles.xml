@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SWDRS>
+	<PatientProfiles>
+		<PatientProfile>
+			<hasId>p1</hasId>
+			<hasName>Sobia</hasName>
+			<hasEmail>sobia@gmail.com</hasEmail>
+			<hasContact>123</hasContact>
+			<hasDateOfBirth>2015-11-30</hasDateOfBirth>
+			<hasGender>Male</hasGender>
+			<hasIncomeGroup>0 - 10,000</hasIncomeGroup>
+			<hasCity>Abbottabad_</hasCity>
+			<hasCountry>Pakistan</hasCountry>
+			<hasArea>Abu_Zar_Ghaffari</hasArea>
+		</PatientProfile>
+		<PatientProfile>
+			<hasId>p3</hasId>
+			<hasName>Goku</hasName>
+			<hasEmail>goku@gmail.com</hasEmail>
+			<hasContact>123</hasContact>
+			<hasDateOfBirth>2015-12-01</hasDateOfBirth>
+			<hasGender>Female</hasGender>
+			<hasIncomeGroup>0 - 10,000</hasIncomeGroup>
+			<hasCity>Karachi</hasCity>
+			<hasCountry>Pakistan</hasCountry>
+			<hasArea>Behar_Colony_</hasArea>
+		</PatientProfile>
+		<PatientProfile>
+			<hasId>p4</hasId>
+			<hasName>Masood Mehmood</hasName>
+			<hasEmail>masood@gmail.com</hasEmail>
+			<hasContact>+923232431518</hasContact>
+			<hasDateOfBirth>2016-05-09</hasDateOfBirth>
+			<hasGender>Male</hasGender>
+			<hasIncomeGroup>25,000 - 50,000</hasIncomeGroup>
+			<hasCity>Karachi</hasCity>
+			<hasCountry>Pakistan</hasCountry>
+			<hasArea>Bilal_Colony_</hasArea>
+		</PatientProfile>
+		<PatientProfile>
+			<hasId>p5</hasId>
+			<hasName>Hammad</hasName>
+			<hasEmail>hammad@gmail.com</hasEmail>
+			<hasContact>1000222</hasContact>
+			<hasDateOfBirth>2016-04-26</hasDateOfBirth>
+			<hasGender>Female</hasGender>
+			<hasIncomeGroup>25,000 - 50,000</hasIncomeGroup>
+			<hasCity>Abbottabad_</hasCity>
+			<hasCountry>Belarus</hasCountry>
+			<hasArea>Banaras_Colony_</hasArea>
+		</PatientProfile>
+	<PatientProfile><hasId>p6</hasId><hasName>Ahmed</hasName><hasEmail>ahmed@domain.com</hasEmail><hasContact>100</hasContact><hasDateOfBirth>2016-12-31</hasDateOfBirth><hasGender>Other</hasGender><hasIncomeGroup>0 - 10,000</hasIncomeGroup><hasCity>Abbottabad_</hasCity><hasCountry>Palau</hasCountry><hasArea>Abu_Zar_Ghaffari</hasArea></PatientProfile><PatientProfile><hasId>p6</hasId><hasName>Haseeb Moin</hasName><hasEmail>haseeb@gmail.com</hasEmail><hasContact>100</hasContact><hasDateOfBirth>2016-12-31</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>25,000 - 50,000</hasIncomeGroup><hasCity>Karachi</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Abu_Zar_Ghaffari</hasArea></PatientProfile><PatientProfile><hasId>p6</hasId><hasName>P.D</hasName><hasEmail>p@domain.com</hasEmail><hasContact>+923214568548</hasContact><hasDateOfBirth>2016-12-31</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>25,000 - 50,000</hasIncomeGroup><hasCity>Karachi</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Banaras_Colony_</hasArea></PatientProfile><PatientProfile><hasId>p6</hasId><hasName>Ali Ahsan</hasName><hasEmail>aliahsan@gmail.com</hasEmail><hasContact>+923547858741</hasContact><hasDateOfBirth>2010-05-10</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>10,000 - 25,000</hasIncomeGroup><hasCity>Abbottabad_</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Abu_Zar_Ghaffari</hasArea></PatientProfile><PatientProfile><hasId>p6</hasId><hasName>shahrukh haider</hasName><hasEmail>sharukh@gmail.com</hasEmail><hasContact>+923222808980</hasContact><hasDateOfBirth>2014-11-29</hasDateOfBirth><hasGender>Female</hasGender><hasIncomeGroup>0 - 10,000</hasIncomeGroup><hasCity>Abbottabad_</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Abu_Zar_Ghaffari</hasArea></PatientProfile><PatientProfile><hasId>p7</hasId><hasName>Ahsan Aftab</hasName><hasEmail>ahsanaftab@gmail.com</hasEmail><hasContact>+923541541541</hasContact><hasDateOfBirth>1990-05-10</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>10,000 - 25,000</hasIncomeGroup><hasCity>Abbottabad_</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Abu_Zar_Ghaffari</hasArea></PatientProfile><PatientProfile><hasId>p8</hasId><hasName>Muhammad Qaisar</hasName><hasEmail>dsu121cs021@gmail.com</hasEmail><hasContact>+923222808980</hasContact><hasDateOfBirth>0002-02-08</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>25,000 - 50,000</hasIncomeGroup><hasCity>Karachi</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Defence_Society__</hasArea></PatientProfile><PatientProfile><hasId>p9</hasId><hasName>moin</hasName><hasEmail>moin@gmail.com</hasEmail><hasContact>+923222808980</hasContact><hasDateOfBirth>2015-11-30</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>0 - 10,000</hasIncomeGroup><hasCity>Abbottabad_</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Abu_Zar_Ghaffari</hasArea></PatientProfile><PatientProfile><hasId>p10</hasId><hasName>Patient1</hasName><hasEmail>p1@domain.com</hasEmail><hasContact>+923222808980</hasContact><hasDateOfBirth>2004-05-03</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>10,000 - 25,000</hasIncomeGroup><hasCity>Abbottabad_</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Aisha_Manzil</hasArea></PatientProfile><PatientProfile><hasId>p11</hasId><hasName>waled</hasName><hasEmail>waled@gmail.com</hasEmail><hasContact>+923222808980</hasContact><hasDateOfBirth>2015-11-30</hasDateOfBirth><hasGender>Male</hasGender><hasIncomeGroup>0 - 10,000</hasIncomeGroup><hasCity>Abbottabad_</hasCity><hasCountry>Pakistan</hasCountry><hasArea>Abu_Zar_Ghaffari</hasArea></PatientProfile></PatientProfiles>
+</SWDRS>

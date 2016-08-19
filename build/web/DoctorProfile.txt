@@ -1,0 +1,61 @@
+4
+Name: name
+Email: email
+Contact: contact
+DateOfBirth: dateOfBirth
+Gender: gender
+Degree: degree
+Specialist: specialist
+Specialties: specialties
+HospitalName: hospitalName
+Day: day
+VisitingHours: visitingHours
+FeeStructure: feeStructure
+City: city
+Country: country
+Area: area
+Name: doctor
+Email: doctor@domain.com
+Contact: 1
+DateOfBirth: 2015-01-01
+Gender: Male
+Degree: Dentist
+Specialist: Yes
+Specialties: Oncology
+HospitalName: PNS Rahat
+Day: Monday
+VisitingHours: 01:00
+FeeStructure: 100
+City: Karachi
+Country: Pakistan
+Area: Nazimabad
+Name: Zain Merchant
+Email: zain@domain.com
+Contact: 123
+DateOfBirth: 2016-12-31
+Gender: Male
+Degree: Allergist
+Specialist: Yes
+Specialties: Anesthesiology
+HospitalName: Abbasi Shaheed Hospital (ASH)
+Day: Wednesday
+VisitingHours: 12:59
+FeeStructure: 1000
+City: Lahore
+Country: Pakistan
+Area: Abu Zar Ghaffari
+Name: Mastan
+Email: mastan@domain.com
+Contact: 0900
+DateOfBirth: 2016-01-04
+Gender: Male
+Degree: Anesthesiologist
+Specialist: Yes
+Specialties: Anesthesiology
+HospitalName: Abbasi Shaheed Hospital (ASH)
+Day: Tuesday
+VisitingHours: 12:00
+FeeStructure: 1000
+City: Faisalabad 
+Country: Pakistan
+Area: Behar Colony 

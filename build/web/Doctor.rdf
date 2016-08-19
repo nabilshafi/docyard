@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#giveRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#giveRating">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasRating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasAddress">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDisease">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasStar"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Area_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Area_Name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#DocFee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#DocFee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#docTiming -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#docTiming"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasAge">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasCountry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasGender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasID">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasInstitute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasInstitute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasStar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasStar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasYear"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#isVisiting -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#isVisiting"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#whichDay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#whichDay"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasLocation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasRating"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Literal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Literal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#integer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#integer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Literal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#string -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#string">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Literal"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Address"/>
+        <Area_Name rdf:datatype="&xsd;string">Clifton</Area_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Cardiologist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+        <hasAge rdf:datatype="&xsd;integer">35</hasAge>
+        <hasName rdf:datatype="&xsd;string">Farooque</hasName>
+        <hasGender rdf:datatype="&xsd;string">Male</hasGender>
+        <hasID rdf:datatype="&xsd;string">d101</hasID>
+        <hasRating rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating5"/>
+        <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Doctor"/>
+        <hasAge rdf:datatype="&xsd;integer">45</hasAge>
+        <hasGender rdf:datatype="&xsd;string">Male</hasGender>
+        <hasName rdf:datatype="&xsd;string">Saleem</hasName>
+        <hasID rdf:datatype="&xsd;string">d102</hasID>
+        <hasLocation rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location1"/>
+        <hasSpecialization rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Neurologist"/>
+        <hasDegree rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Location"/>
+        <DocFee rdf:datatype="&xsd;integer">250</DocFee>
+        <docTiming rdf:datatype="&xsd;string">5pm to 7pm</docTiming>
+        <Area_Name rdf:datatype="&xsd;string">Clifton</Area_Name>
+        <whichDay rdf:datatype="&xsd;string">Monday</whichDay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Neurologist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Neurologist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#headache"/>
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#nausea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Optician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Optician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Specialization"/>
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#blurvision"/>
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#dryeyes"/>
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#headache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+        <hasDisease rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#jaundice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+        <hasAge rdf:datatype="&xsd;integer">29</hasAge>
+        <hasGender rdf:datatype="&xsd;string">female</hasGender>
+        <hasID rdf:datatype="&xsd;string">p001</hasID>
+        <hasName rdf:datatype="&xsd;string">reshma</hasName>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#dryeyes"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#headache"/>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#yelloweyes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Patient"/>
+        <hasAge rdf:datatype="&xsd;integer">7</hasAge>
+        <hasName rdf:datatype="&xsd;string">fatima</hasName>
+        <hasGender rdf:datatype="&xsd;string">female</hasGender>
+        <hasID rdf:datatype="&xsd;string">p002</hasID>
+        <hasSymptoms rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#toothache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+        <hasStar rdf:datatype="&xsd;integer">1</hasStar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+        <hasStar rdf:datatype="&xsd;integer">2</hasStar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+        <hasStar rdf:datatype="&xsd;integer">3</hasStar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+        <hasStar rdf:datatype="&xsd;integer">4</hasStar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Rating"/>
+        <hasStar rdf:datatype="&xsd;integer">5</hasStar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#armpain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#armpain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#blurvision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#blurvision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+        <hasName rdf:datatype="&xsd;string">BDS</hasName>
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#toothache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#degree2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Degree"/>
+        <hasName rdf:datatype="&xsd;string">MBBS</hasName>
+        <Covers rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#jaundice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#dryeyes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#dryeyes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#headache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#headache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#jaundice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#jaundice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#legpain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#legpain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#nausea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#nausea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#stomachache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#stomachache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#toothache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#toothache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#yelloweyes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#yelloweyes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#w">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#z">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#y">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSpecialization"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDisease"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#Covers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasDegree"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#hasSymptoms"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/liban/ontologies/2015/11/untitled-ontology-13#canHaveDoctor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

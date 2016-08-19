@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SWDRS>
+	<Feedbacks>
+		<Feedback>
+			<hasId>f1</hasId>
+			<hasPatientName>Masood Mehmood</hasPatientName>
+			<hasPatientEmail>masood@gmail.com</hasPatientEmail>
+			<hasDoctorName>Haji Haroon</hasDoctorName>
+			<hasDoctorRating>2.5</hasDoctorRating>
+			<hasBehavior1Answer>Always</hasBehavior1Answer>
+			<hasBehavior2Answer>Always</hasBehavior2Answer>
+			<hasBehavior3Answer>Always</hasBehavior3Answer>
+			<hasBehavior4Answer>Always</hasBehavior4Answer>
+			<hasBehavior5Answer>Always</hasBehavior5Answer>
+			<hasBehavior6Answer>Always</hasBehavior6Answer>
+			<hasInteraction1Answer>Yes</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>Yes</hasInteraction3Answer>
+			<hasInteraction4Answer>Yes</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>Yes</hasInteraction6Answer>
+			<hasInteraction7Answer>Yes</hasInteraction7Answer>
+			<hasInteraction8Answer>Yes</hasInteraction8Answer>
+			<hasInteraction9Answer>Yes</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>Instant</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>10</hasScaleAnswer>
+		</Feedback>
+		<Feedback>
+			<hasId>f2</hasId>
+			<hasPatientName>Masood Mehmood</hasPatientName>
+			<hasPatientEmail>masood@gmail.com</hasPatientEmail>
+			<hasDoctorName>Haji Haroon</hasDoctorName>
+			<hasDoctorRating>10</hasDoctorRating>
+			<hasBehavior1Answer>Never</hasBehavior1Answer>
+			<hasBehavior2Answer>Never</hasBehavior2Answer>
+			<hasBehavior3Answer>Never</hasBehavior3Answer>
+			<hasBehavior4Answer>Never</hasBehavior4Answer>
+			<hasBehavior5Answer>Never</hasBehavior5Answer>
+			<hasBehavior6Answer>Never</hasBehavior6Answer>
+			<hasInteraction1Answer>Yes</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>Yes</hasInteraction3Answer>
+			<hasInteraction4Answer>Yes</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>Yes</hasInteraction6Answer>
+			<hasInteraction7Answer>No</hasInteraction7Answer>
+			<hasInteraction8Answer>Yes</hasInteraction8Answer>
+			<hasInteraction9Answer>No</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>Instant</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>1</hasScaleAnswer>
+		</Feedback>
+		<Feedback>
+			<hasId>f3</hasId>
+			<hasPatientName>Masood Mehmood</hasPatientName>
+			<hasPatientEmail>masood@gmail.com</hasPatientEmail>
+			<hasDoctorName>Haji Haroon Khan</hasDoctorName>
+			<hasDoctorRating>8.1669999</hasDoctorRating>
+			<hasBehavior1Answer>Always</hasBehavior1Answer>
+			<hasBehavior2Answer>Always</hasBehavior2Answer>
+			<hasBehavior3Answer>Always</hasBehavior3Answer>
+			<hasBehavior4Answer>Always</hasBehavior4Answer>
+			<hasBehavior5Answer>Always</hasBehavior5Answer>
+			<hasBehavior6Answer>Sometimes</hasBehavior6Answer>
+			<hasInteraction1Answer>Yes</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>No</hasInteraction3Answer>
+			<hasInteraction4Answer>Yes</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>Yes</hasInteraction6Answer>
+			<hasInteraction7Answer>Yes</hasInteraction7Answer>
+			<hasInteraction8Answer>Yes</hasInteraction8Answer>
+			<hasInteraction9Answer>Yes</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>More than 3 visits</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>6</hasScaleAnswer>
+		</Feedback>
+		<Feedback>
+			<hasId>f4</hasId>
+			<hasPatientName>Masood Mehmood</hasPatientName>
+			<hasPatientEmail>masood@gmail.com</hasPatientEmail>
+			<hasDoctorName>Haji Haroon</hasDoctorName>
+			<hasDoctorRating>9.8888</hasDoctorRating>
+			<hasBehavior1Answer>Always</hasBehavior1Answer>
+			<hasBehavior2Answer>Always</hasBehavior2Answer>
+			<hasBehavior3Answer>Always</hasBehavior3Answer>
+			<hasBehavior4Answer>Always</hasBehavior4Answer>
+			<hasBehavior5Answer>Always</hasBehavior5Answer>
+			<hasBehavior6Answer>Always</hasBehavior6Answer>
+			<hasInteraction1Answer>Yes</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>Yes</hasInteraction3Answer>
+			<hasInteraction4Answer>Yes</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>Yes</hasInteraction6Answer>
+			<hasInteraction7Answer>Yes</hasInteraction7Answer>
+			<hasInteraction8Answer>Yes</hasInteraction8Answer>
+			<hasInteraction9Answer>Yes</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>More than 3 visits</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>2</hasScaleAnswer>
+		</Feedback>
+		<Feedback>
+			<hasId>f5</hasId>
+			<hasPatientName>Masood Mehmood</hasPatientName>
+			<hasPatientEmail>masood@gmail.com</hasPatientEmail>
+			<hasDoctorName>ladyfinger</hasDoctorName>
+			<hasDoctorRating>5.1666</hasDoctorRating>
+			<hasBehavior1Answer>Never</hasBehavior1Answer>
+			<hasBehavior2Answer>Never</hasBehavior2Answer>
+			<hasBehavior3Answer>Never</hasBehavior3Answer>
+			<hasBehavior4Answer>Never</hasBehavior4Answer>
+			<hasBehavior5Answer>Never</hasBehavior5Answer>
+			<hasBehavior6Answer>Never</hasBehavior6Answer>
+			<hasInteraction1Answer>Yes</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>Yes</hasInteraction3Answer>
+			<hasInteraction4Answer>Yes</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>Yes</hasInteraction6Answer>
+			<hasInteraction7Answer>Yes</hasInteraction7Answer>
+			<hasInteraction8Answer>Yes</hasInteraction8Answer>
+			<hasInteraction9Answer>Yes</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>1</hasScaleAnswer>
+		</Feedback>
+		<Feedback>
+			<hasId>f6</hasId>
+			<hasPatientName>Masood Mehmood</hasPatientName>
+			<hasPatientEmail>masood@gmail.com</hasPatientEmail>
+			<hasDoctorName>Haji Haroon</hasDoctorName>
+			<hasDoctorRating>9.15</hasDoctorRating>
+			<hasBehavior1Answer>Never</hasBehavior1Answer>
+			<hasBehavior2Answer>Usually</hasBehavior2Answer>
+			<hasBehavior3Answer>Usually</hasBehavior3Answer>
+			<hasBehavior4Answer>Never</hasBehavior4Answer>
+			<hasBehavior5Answer>Never</hasBehavior5Answer>
+			<hasBehavior6Answer>Never</hasBehavior6Answer>
+			<hasInteraction1Answer>Yes</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>Yes</hasInteraction3Answer>
+			<hasInteraction4Answer>No</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>Yes</hasInteraction6Answer>
+			<hasInteraction7Answer>Yes</hasInteraction7Answer>
+			<hasInteraction8Answer>No</hasInteraction8Answer>
+			<hasInteraction9Answer>Yes</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>1</hasScaleAnswer>
+		</Feedback>
+		<Feedback>
+			<hasId>f7</hasId>
+			<hasPatientName>Ahmed</hasPatientName>
+			<hasPatientEmail>ahmed@domain.com</hasPatientEmail>
+			<hasDoctorName>taha</hasDoctorName>
+			<hasDoctorRating>8.0</hasDoctorRating>
+			<hasBehavior1Answer>Never</hasBehavior1Answer>
+			<hasBehavior2Answer>Never</hasBehavior2Answer>
+			<hasBehavior3Answer>Never</hasBehavior3Answer>
+			<hasBehavior4Answer>Never</hasBehavior4Answer>
+			<hasBehavior5Answer>Never</hasBehavior5Answer>
+			<hasBehavior6Answer>Never</hasBehavior6Answer>
+			<hasInteraction1Answer>Yes</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>Yes</hasInteraction3Answer>
+			<hasInteraction4Answer>Yes</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>Yes</hasInteraction6Answer>
+			<hasInteraction7Answer>Yes</hasInteraction7Answer>
+			<hasInteraction8Answer>Yes</hasInteraction8Answer>
+			<hasInteraction9Answer>Yes</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>4</hasScaleAnswer>
+		</Feedback>
+		<Feedback>
+			<hasId>f8</hasId>
+			<hasPatientName>Hammad</hasPatientName>
+			<hasPatientEmail>hammad@gmail.com</hasPatientEmail>
+			<hasDoctorName>taha</hasDoctorName>
+			<hasDoctorRating>9.816666666666666</hasDoctorRating>
+			<hasBehavior1Answer>Usually</hasBehavior1Answer>
+			<hasBehavior2Answer>Never</hasBehavior2Answer>
+			<hasBehavior3Answer>Never</hasBehavior3Answer>
+			<hasBehavior4Answer>Sometimes</hasBehavior4Answer>
+			<hasBehavior5Answer>Always</hasBehavior5Answer>
+			<hasBehavior6Answer>Usually</hasBehavior6Answer>
+			<hasInteraction1Answer>No</hasInteraction1Answer>
+			<hasInteraction2Answer>Yes</hasInteraction2Answer>
+			<hasInteraction3Answer>Yes</hasInteraction3Answer>
+			<hasInteraction4Answer>Yes</hasInteraction4Answer>
+			<hasInteraction5Answer>Yes</hasInteraction5Answer>
+			<hasInteraction6Answer>No</hasInteraction6Answer>
+			<hasInteraction7Answer>Yes</hasInteraction7Answer>
+			<hasInteraction8Answer>No</hasInteraction8Answer>
+			<hasInteraction9Answer>No</hasInteraction9Answer>
+			<hasDiagnosisTimeAnswer>Instant</hasDiagnosisTimeAnswer>
+			<hasScaleAnswer>9</hasScaleAnswer>
+		</Feedback>
+	<Feedback><hasId>f9</hasId><hasPatientName>Ahmed</hasPatientName><hasPatientEmail>ahmed@domain.com</hasPatientEmail><hasDoctorName>shoaib</hasDoctorName><hasDoctorRating>10.0</hasDoctorRating><hasBehavior1Answer>Always</hasBehavior1Answer><hasBehavior2Answer>Always</hasBehavior2Answer><hasBehavior3Answer>Always</hasBehavior3Answer><hasBehavior4Answer>Always</hasBehavior4Answer><hasBehavior5Answer>Always</hasBehavior5Answer><hasBehavior6Answer>Always</hasBehavior6Answer><hasInteraction1Answer>Yes</hasInteraction1Answer><hasInteraction2Answer>Yes</hasInteraction2Answer><hasInteraction3Answer>Yes</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>Yes</hasInteraction5Answer><hasInteraction6Answer>Yes</hasInteraction6Answer><hasInteraction7Answer>Yes</hasInteraction7Answer><hasInteraction8Answer>Yes</hasInteraction8Answer><hasInteraction9Answer>Yes</hasInteraction9Answer><hasDiagnosisTimeAnswer>Instant</hasDiagnosisTimeAnswer><hasScaleAnswer>10</hasScaleAnswer></Feedback><Feedback><hasId>f10</hasId><hasPatientName>Goku</hasPatientName><hasPatientEmail>goku@gmail.com</hasPatientEmail><hasDoctorName>shoaib</hasDoctorName><hasDoctorRating>0.06666666666666667</hasDoctorRating><hasBehavior1Answer>Never</hasBehavior1Answer><hasBehavior2Answer>Never</hasBehavior2Answer><hasBehavior3Answer>Never</hasBehavior3Answer><hasBehavior4Answer>Never</hasBehavior4Answer><hasBehavior5Answer>Never</hasBehavior5Answer><hasBehavior6Answer>Never</hasBehavior6Answer><hasInteraction1Answer>No</hasInteraction1Answer><hasInteraction2Answer>No</hasInteraction2Answer><hasInteraction3Answer>No</hasInteraction3Answer><hasInteraction4Answer>No</hasInteraction4Answer><hasInteraction5Answer>No</hasInteraction5Answer><hasInteraction6Answer>No</hasInteraction6Answer><hasInteraction7Answer>No</hasInteraction7Answer><hasInteraction8Answer>No</hasInteraction8Answer><hasInteraction9Answer>No</hasInteraction9Answer><hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer><hasScaleAnswer>1</hasScaleAnswer></Feedback><Feedback><hasId>f11</hasId><hasPatientName>Haseeb Moin</hasPatientName><hasPatientEmail>haseeb@gmail.com</hasPatientEmail><hasDoctorName>Aftab Khan</hasDoctorName><hasDoctorRating>5.4</hasDoctorRating><hasBehavior1Answer>Never</hasBehavior1Answer><hasBehavior2Answer>Never</hasBehavior2Answer><hasBehavior3Answer>Never</hasBehavior3Answer><hasBehavior4Answer>Never</hasBehavior4Answer><hasBehavior5Answer>Never</hasBehavior5Answer><hasBehavior6Answer>Never</hasBehavior6Answer><hasInteraction1Answer>Yes</hasInteraction1Answer><hasInteraction2Answer>Yes</hasInteraction2Answer><hasInteraction3Answer>Yes</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>Yes</hasInteraction5Answer><hasInteraction6Answer>Yes</hasInteraction6Answer><hasInteraction7Answer>Yes</hasInteraction7Answer><hasInteraction8Answer>Yes</hasInteraction8Answer><hasInteraction9Answer>Yes</hasInteraction9Answer><hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer><hasScaleAnswer>1</hasScaleAnswer></Feedback><Feedback><hasId>f12</hasId><hasPatientName>Goku</hasPatientName><hasPatientEmail>goku@gmail.com</hasPatientEmail><hasDoctorName>zaeem</hasDoctorName><hasDoctorRating>1.7166666666666666</hasDoctorRating><hasBehavior1Answer>Never</hasBehavior1Answer><hasBehavior2Answer>Never</hasBehavior2Answer><hasBehavior3Answer>Never</hasBehavior3Answer><hasBehavior4Answer>Never</hasBehavior4Answer><hasBehavior5Answer>Never</hasBehavior5Answer><hasBehavior6Answer>Usually</hasBehavior6Answer><hasInteraction1Answer>No</hasInteraction1Answer><hasInteraction2Answer>No</hasInteraction2Answer><hasInteraction3Answer>Yes</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>No</hasInteraction5Answer><hasInteraction6Answer>No</hasInteraction6Answer><hasInteraction7Answer>No</hasInteraction7Answer><hasInteraction8Answer>No</hasInteraction8Answer><hasInteraction9Answer>No</hasInteraction9Answer><hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer><hasScaleAnswer>1</hasScaleAnswer></Feedback><Feedback><hasId>f13</hasId><hasPatientName>Ahsan Aftab</hasPatientName><hasPatientEmail>ahsanaftab@gmail.com</hasPatientEmail><hasDoctorName>zohaib</hasDoctorName><hasDoctorRating>5.4</hasDoctorRating><hasBehavior1Answer>Never</hasBehavior1Answer><hasBehavior2Answer>Never</hasBehavior2Answer><hasBehavior3Answer>Never</hasBehavior3Answer><hasBehavior4Answer>Never</hasBehavior4Answer><hasBehavior5Answer>Never</hasBehavior5Answer><hasBehavior6Answer>Never</hasBehavior6Answer><hasInteraction1Answer>Yes</hasInteraction1Answer><hasInteraction2Answer>Yes</hasInteraction2Answer><hasInteraction3Answer>Yes</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>Yes</hasInteraction5Answer><hasInteraction6Answer>Yes</hasInteraction6Answer><hasInteraction7Answer>Yes</hasInteraction7Answer><hasInteraction8Answer>Yes</hasInteraction8Answer><hasInteraction9Answer>Yes</hasInteraction9Answer><hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer><hasScaleAnswer>1</hasScaleAnswer></Feedback><Feedback><hasId>f14</hasId><hasPatientName>Masood Mehmood</hasPatientName><hasPatientEmail>masood@gmail.com</hasPatientEmail><hasDoctorName>zaeem</hasDoctorName><hasDoctorRating>5.4</hasDoctorRating><hasBehavior1Answer>Never</hasBehavior1Answer><hasBehavior2Answer>Never</hasBehavior2Answer><hasBehavior3Answer>Never</hasBehavior3Answer><hasBehavior4Answer>Never</hasBehavior4Answer><hasBehavior5Answer>Never</hasBehavior5Answer><hasBehavior6Answer>Never</hasBehavior6Answer><hasInteraction1Answer>Yes</hasInteraction1Answer><hasInteraction2Answer>Yes</hasInteraction2Answer><hasInteraction3Answer>Yes</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>Yes</hasInteraction5Answer><hasInteraction6Answer>Yes</hasInteraction6Answer><hasInteraction7Answer>Yes</hasInteraction7Answer><hasInteraction8Answer>Yes</hasInteraction8Answer><hasInteraction9Answer>Yes</hasInteraction9Answer><hasDiagnosisTimeAnswer>No diagnosis</hasDiagnosisTimeAnswer><hasScaleAnswer>1</hasScaleAnswer></Feedback><Feedback><hasId>f15</hasId><hasPatientName>Masood Mehmood</hasPatientName><hasPatientEmail>masood@gmail.com</hasPatientEmail><hasDoctorName>zaeem</hasDoctorName><hasDoctorRating>9.383333333333333</hasDoctorRating><hasBehavior1Answer>Always</hasBehavior1Answer><hasBehavior2Answer>Always</hasBehavior2Answer><hasBehavior3Answer>Always</hasBehavior3Answer><hasBehavior4Answer>Always</hasBehavior4Answer><hasBehavior5Answer>Always</hasBehavior5Answer><hasBehavior6Answer>Usually</hasBehavior6Answer><hasInteraction1Answer>Yes</hasInteraction1Answer><hasInteraction2Answer>Yes</hasInteraction2Answer><hasInteraction3Answer>Yes</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>Yes</hasInteraction5Answer><hasInteraction6Answer>No</hasInteraction6Answer><hasInteraction7Answer>Yes</hasInteraction7Answer><hasInteraction8Answer>Yes</hasInteraction8Answer><hasInteraction9Answer>Yes</hasInteraction9Answer><hasDiagnosisTimeAnswer>Instant</hasDiagnosisTimeAnswer><hasScaleAnswer>10</hasScaleAnswer></Feedback><Feedback><hasId>f16</hasId><hasPatientName>Masood Mehmood</hasPatientName><hasPatientEmail>masood@gmail.com</hasPatientEmail><hasDoctorName>mansoor</hasDoctorName><hasDoctorRating>0.3</hasDoctorRating><hasBehavior1Answer>Never</hasBehavior1Answer><hasBehavior2Answer>Never</hasBehavior2Answer><hasBehavior3Answer>Never</hasBehavior3Answer><hasBehavior4Answer>Never</hasBehavior4Answer><hasBehavior5Answer>Never</hasBehavior5Answer><hasBehavior6Answer>Never</hasBehavior6Answer><hasInteraction1Answer>No</hasInteraction1Answer><hasInteraction2Answer>No</hasInteraction2Answer><hasInteraction3Answer>No</hasInteraction3Answer><hasInteraction4Answer>No</hasInteraction4Answer><hasInteraction5Answer>No</hasInteraction5Answer><hasInteraction6Answer>No</hasInteraction6Answer><hasInteraction7Answer>No</hasInteraction7Answer><hasInteraction8Answer>No</hasInteraction8Answer><hasInteraction9Answer>No</hasInteraction9Answer><hasDiagnosisTimeAnswer>More than 3 visits</hasDiagnosisTimeAnswer><hasScaleAnswer>2</hasScaleAnswer></Feedback><Feedback><hasId>f17</hasId><hasPatientName>Patient1</hasPatientName><hasPatientEmail>p1@domain.com</hasPatientEmail><hasDoctorName>Aftab Khan</hasDoctorName><hasDoctorRating>6.1</hasDoctorRating><hasBehavior1Answer>Sometimes</hasBehavior1Answer><hasBehavior2Answer>Sometimes</hasBehavior2Answer><hasBehavior3Answer>Always</hasBehavior3Answer><hasBehavior4Answer>Usually</hasBehavior4Answer><hasBehavior5Answer>Always</hasBehavior5Answer><hasBehavior6Answer>Never</hasBehavior6Answer><hasInteraction1Answer>No</hasInteraction1Answer><hasInteraction2Answer>Yes</hasInteraction2Answer><hasInteraction3Answer>No</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>No</hasInteraction5Answer><hasInteraction6Answer>Yes</hasInteraction6Answer><hasInteraction7Answer>Yes</hasInteraction7Answer><hasInteraction8Answer>No</hasInteraction8Answer><hasInteraction9Answer>Yes</hasInteraction9Answer><hasDiagnosisTimeAnswer>Instant</hasDiagnosisTimeAnswer><hasScaleAnswer>8</hasScaleAnswer></Feedback><Feedback><hasId>f18</hasId><hasPatientName>Masood Mehmood</hasPatientName><hasPatientEmail>masood@gmail.com</hasPatientEmail><hasDoctorName>Moiz Khan</hasDoctorName><hasDoctorRating>7.05</hasDoctorRating><hasBehavior1Answer>Sometimes</hasBehavior1Answer><hasBehavior2Answer>Usually</hasBehavior2Answer><hasBehavior3Answer>Sometimes</hasBehavior3Answer><hasBehavior4Answer>Never</hasBehavior4Answer><hasBehavior5Answer>Sometimes</hasBehavior5Answer><hasBehavior6Answer>Usually</hasBehavior6Answer><hasInteraction1Answer>No</hasInteraction1Answer><hasInteraction2Answer>Yes</hasInteraction2Answer><hasInteraction3Answer>Yes</hasInteraction3Answer><hasInteraction4Answer>Yes</hasInteraction4Answer><hasInteraction5Answer>Yes</hasInteraction5Answer><hasInteraction6Answer>Yes</hasInteraction6Answer><hasInteraction7Answer>Yes</hasInteraction7Answer><hasInteraction8Answer>Yes</hasInteraction8Answer><hasInteraction9Answer>Yes</hasInteraction9Answer><hasDiagnosisTimeAnswer>Instant</hasDiagnosisTimeAnswer><hasScaleAnswer>5</hasScaleAnswer></Feedback></Feedbacks>
+</SWDRS>

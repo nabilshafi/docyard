@@ -1,0 +1,25 @@
+6
+Email: email
+Password: password
+Name: name
+UserType: DOCTOR
+Email: doctor@domain.com
+Password: 123
+Name: doctor
+UserType: DOCTOR
+Email: zain@domain.com
+Password: 123
+Name: Zain Merchant
+UserType: DOCTOR
+Email: a@domain.com
+Password: 123
+Name: a
+UserType: DOCTOR
+Email: asad@domain.com
+Password: 123
+Name: Asad
+UserType: DOCTOR
+Email: mastan@domain.com
+Password: 123
+Name: Mastan
+UserType: DOCTOR

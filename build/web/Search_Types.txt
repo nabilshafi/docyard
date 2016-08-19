@@ -1,0 +1,15 @@
+Name
+Email
+Contact
+Date Of Birth
+Gender
+Degree
+Specialist
+Specialties
+Hospital Name
+Day
+Visiting Hours
+Fee Structure
+City
+Country
+Area

@@ -1,0 +1,21 @@
+5
+PatientName: patientName
+DoctorName: doctorName
+DoctorRating: doctorRating
+PatientFeedback: patientFeedback
+PatientName: patient
+DoctorName: Zain Merchant
+DoctorRating: 4
+PatientFeedback: Nice Doctor
+PatientName: patient
+DoctorName: Zain Merchant
+DoctorRating: 5
+PatientFeedback: best
+PatientName: patient
+DoctorName: a
+DoctorRating: 2
+PatientFeedback: Worst
+PatientName: Ahmed Khan
+DoctorName: Asad
+DoctorRating: 4
+PatientFeedback: best

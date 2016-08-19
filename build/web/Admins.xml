@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SWDRS>
+	<Admins>
+		<Admin>
+			<hasEmail>admin@domain.com</hasEmail>
+			<hasPassword>123</hasPassword>
+			<hasName>Zohaib Masood</hasName>
+			<hasType>ADMIN</hasType>
+		</Admin>
+	</Admins>
+</SWDRS>

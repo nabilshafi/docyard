@@ -1,0 +1,17 @@
+Was the doctor warm and friendly?*
+Was the doctor respectful?*
+Was the doctor attentive?*
+Was the doctor concerned?*
+Was the doctor telling things properly?*
+Did the doctor give you ample time?*
+Did the doctor understand and ask questions regarding your health history?*
+Did the doctor discuss treatment option with you?*
+Did the doctor explain drugs, other treatments, their expected effects and side effects?*
+Did the doctor answer questions to your satisfaction?*
+Did the doctor give you advice on what to do if symptoms persist or worsen?*
+Did the doctor give advice to you on ways to stay healthy?*
+Did the doctor treated you well?*
+Would you be happy to see the doctor again?*
+Do you think the doctor is good and will give you the right care?*
+How much time did the doctor take in diagnosis?*
+On the scale of 1-10, (1 being the lowest and 10 being the highest), mention your extent of satisfaction?*

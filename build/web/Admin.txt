@@ -1,0 +1,9 @@
+2
+Email: email
+Password: password
+Name: name
+UserType: ADMIN
+Email: admin@domain.com
+Password: 123
+Name: admin
+UserType: ADMIN

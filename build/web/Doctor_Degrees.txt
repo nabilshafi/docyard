@@ -1,0 +1,9 @@
+Doctor of Law
+Doctor of Medicine (MD)
+Doctor of Nutrition and Dietetics (DND)
+Doctor of Pharmacy (PharmD)
+Doctor of Philosophy (PhD)
+Doctor of Physiotherapy (DPT)
+Doctor of Science (DSc)
+Doctor of Veterinary Medicine (DVM)
+Fellow of College of Physicians and Surgeons Pakistan (FCPS)
